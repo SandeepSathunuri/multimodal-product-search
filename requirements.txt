@@ -1,0 +1,29 @@
+# Core
+numpy
+pandas
+pyyaml
+tqdm
+
+# Text Embedding
+sentence-transformers==2.2.2
+
+# Image Embedding (CLIP)
+transformers==4.41.1
+torch
+torchvision
+Pillow
+
+# Vector Search
+faiss-cpu==1.7.4
+
+# Frontend (optional, pick one)
+gradio==4.27.0
+streamlit==1.34.0
+fastapi==0.111.0
+uvicorn[standard]
+
+# Dev & Testing
+ipykernel
+jupyter
+pytest
+black

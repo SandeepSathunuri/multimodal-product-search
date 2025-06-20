@@ -1,0 +1,17 @@
+project:
+  name: multimodal-product-search
+paths:
+  raw_data_csv: data/raw/data.csv
+  raw_image_dir: data/raw/images
+  cleaned_csv: data/processed/cleaned_data.csv
+  aligned_csv: data/processed/aligned_preprocessed.csv
+  text_embeddings: data/embeddings/text_embeddings.npy
+  image_embeddings: data/embeddings/image_embeddings_clip.npy
+  fused_embeddings: data/embeddings/fused_embeddings.npy
+  faiss_fusion_index: data/embeddings/fused_index.faiss
+models:
+  text_model: all-MiniLM-L6-v2
+  image_model: openai/clip-vit-base-patch32
+fusion:
+  alpha: 0.5
+  beta: 0.5
